@@ -15,17 +15,22 @@ const SearchBar = () => {
 
 export default SearchBar
 
+
+
+// ======================= STYLING =====================
+
 const Search = styled.div`
 background: #F5F7FA;
 border-radius: 40px;
+margin-right: 10px;
 display:flex;
-height: 50px;
-max-width: 320px;
+height: 35px;
+width: 250px;
 
 input{
-  padding: 0px;
+  margin-right: 1rem;
   font-family:inherit;
-  font-size: 16px;
+  font-size: .8rem;
   width:100%;
   outline: none;
   border:none;
@@ -41,13 +46,13 @@ background: none;
 color: #718EBF;
 font-family: inherit;
 letter-spacing: inherit;
-font-size: inherit;
+font-size: 10px;
 text-align: inherit;
-padding: .8rem 1.2rem;
+padding: .5rem 0 .5rem 1.1rem;
 display:flex;
 cursor: pointer;
 
 svg {
-  font-size: 30px;
+  font-size: 20px;
 }
 `

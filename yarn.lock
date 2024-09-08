@@ -664,32 +664,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"boiler@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "boiler@workspace:."
-  dependencies:
-    "@tanstack/react-query": ^5.52.2
-    "@types/node": ^20
-    "@types/react": ^18
-    "@types/react-dom": ^18
-    "@types/styled-components": ^5.1.34
-    axios: ^1.7.5
-    eslint: ^8
-    eslint-config-next: 14.2.7
-    next: 14.2.7
-    react: ^18
-    react-cookie: ^7.2.0
-    react-dom: ^18
-    react-hook-form: ^7.53.0
-    react-icons: ^5.3.0
-    styled-components: ^6.1.12
-    styled-normalize: ^8.1.1
-    typescript: ^5
-    zod: ^3.23.8
-    zustand: ^4.5.5
-  languageName: unknown
-  linkType: soft
-
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -717,6 +691,32 @@ __metadata:
   checksum: b95aa0b3bd909f6cd1720ffcf031aeaf46154dd88b4da01f9a1d3f7ea866a79eba76a6d01cbc3c422b2ee5cdc39a4f02491058d5df0d7bf6e6a162a832df1f69
   languageName: node
   linkType: hard
+
+"bridge-ui@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "bridge-ui@workspace:."
+  dependencies:
+    "@tanstack/react-query": ^5.52.2
+    "@types/node": ^20
+    "@types/react": ^18
+    "@types/react-dom": ^18
+    "@types/styled-components": ^5.1.34
+    axios: ^1.7.5
+    eslint: ^8
+    eslint-config-next: 14.2.7
+    next: 14.2.7
+    react: ^18
+    react-cookie: ^7.2.0
+    react-dom: ^18
+    react-hook-form: ^7.53.0
+    react-icons: ^5.3.0
+    styled-components: ^6.1.12
+    styled-normalize: ^8.1.1
+    typescript: ^5
+    zod: ^3.23.8
+    zustand: ^4.5.5
+  languageName: unknown
+  linkType: soft
 
 "busboy@npm:1.6.0":
   version: 1.6.0

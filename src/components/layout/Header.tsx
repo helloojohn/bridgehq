@@ -1,6 +1,9 @@
 "use client"
 import { styled } from 'styled-components'
 import SearchBar from '../SearchBar'
+import SettingsIcon from '../SettingIcon'
+import NotificationsIcon from '../NotificationIcon'
+import ProfileIcon from '../ProfileIcon'
 
 
 
@@ -10,12 +13,9 @@ const Header = () => {
           <HeaderTitle>Overview</HeaderTitle>
           <HeaderItemWrapper>
               <SearchBar />
-              <Wrap/>
-              <Wrap/>
-              {/*<Wrap/>
-              <SettingIcon>Setting</SettingIcon>
-              <NotificationIcon>Bell</NotificationIcon>
-              <Profile>Profile</Profile> */}
+              <SettingsIcon />
+              <NotificationsIcon />
+              <ProfileIcon />
           </HeaderItemWrapper>
 
     </HeaderContainer>
@@ -31,15 +31,16 @@ const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
-    height:6rem;
+    padding: 0 2rem 0 2rem;
+    height: 5rem;
     background: #ffff;
     border-bottom: 1px solid #E5E5E5;
 
 `
 
 const HeaderTitle = styled.h1`
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
     /* padding: 1.3rem; */
 `
 
@@ -48,11 +49,4 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
-`
-const Wrap = styled.div`
-    width: 70px;
-    height: 70px;
-    margin:  2rem;
-    border-radius: 50%;
-    background-color: black;
 `

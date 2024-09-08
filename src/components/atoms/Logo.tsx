@@ -31,13 +31,13 @@ export default Logo
 const LogoWrapper = styled(Link)`
  display: flex;
  align-items: center;
- padding:1.8rem 0;
+ padding: 1.6rem 2rem;
  text-decoration: none;
  color: black;
- /* color: #343C6A; */
+ cursor: pointer;
 `
 
-const LogoText = styled.span`
+const LogoText = styled.strong`
 padding-left:0.5rem;
 font-size: 1.5rem;
 font-weight: 900;

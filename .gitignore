@@ -7,6 +7,7 @@
 .yarn/install-state.gz
 .yarn*
 /.yarn*
+/.yarn
 
 # testing
 /coverage

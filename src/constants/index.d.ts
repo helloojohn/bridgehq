@@ -1,10 +1,12 @@
-import { HiHomeModern } from "react-icons/hi2"
+import { AiFillHome } from "react-icons/ai";
+
+
 
 export const sidebarLinks = [
     {
-        icon:"Home",
+        icon: (< AiFillHome />),
         route: "/",
-        label:"Dashboard",
+        label: "Dashboard",
     },
     {
         icon: "Home",
@@ -36,7 +38,7 @@ export const sidebarLinks = [
         route: "/services",
         label: "Services",
     },
-    { 
+    {
         icon: "Home",
         route: "/my-privileges",
         label: "My Privileges",
@@ -52,10 +54,8 @@ export const sidebarLinks = [
         label: "Home",
     },
     {
-        icon:"Home",
+        icon: "Home",
         route: "/",
-        label:"Home",
+        label: "Home",
     },
-
-
 ]
