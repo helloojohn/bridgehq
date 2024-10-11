@@ -22,8 +22,8 @@ export default ProfileIcon
 
 const Profile = styled.div`
 margin-left: 1rem;
-height: 45px;
-width: 45px;
+height: 43px;
+width: 43px;
 cursor: pointer;
 `
 const ProfileImage = styled(Image)`

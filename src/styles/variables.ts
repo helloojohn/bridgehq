@@ -5,12 +5,15 @@ export const base = {
         md: "1rem",
         lg: "1.125rem",
         xl: "1.25rem",
-        h1: "3rem",
-        h2: "2.5rem",
-        h3: "2rem",
-        h4: "1.5rem",
-        h5: "1.25rem",
-        h6: "1.125rem",
+        h1: "1.75rem",
+        h2: "1.375rem",
+        h3: "1.25rem",
+        h4: "1.125rem",
+        t1: "1rem",
+        t2: "0.93rem",
+        t3: "0.81rem",
+        b1: "1.125rem",
+        b2: "0.94rem",
     },
     color: {
         primary1: "#FEAA09",
@@ -21,22 +24,27 @@ export const base = {
         background: "#F5F7FA",
         links: "#B1B1B1",
         activeLink: "#1814F3",
-        gray: "#718EBF",
-        text: "",
-        body:""
+        text: "#232323",
+        body:"#718EBF"
     },
-    gradient: {},
+    gradient: {
+        blue: "linear-gradient(107deg, #4C49ED 2.61 %, #0A06F4 101.2 %)"
+    },
     hover: {},
     radius: {
         r0: "0.94rem",
         r1: "1.25rem",
         r2: "1.56rem",
-        r3: "3.13rem",
-        r0: "0.94rem",
+        r3: "3.13rem"
     },
     spacing: {},
-    breakpoint: {
-
-    }
+    breakpoints: {
+        xs: '0px',
+        sm: '576px', // landscape phones, 576px and up
+        md: '768px', // tablets, 768px and up
+        lg: '992px', // desktops, 992px and up
+        xl: '1200px', // large desktops, 1200px and up
+        xxl: '1400px' // larger desktops, 1400px and up
+    },
 
 }

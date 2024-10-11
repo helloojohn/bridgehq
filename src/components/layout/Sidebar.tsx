@@ -1,11 +1,15 @@
 "use client"
 
-import { styled } from 'styled-components'
+import { styled, ThemeContext } from 'styled-components'
 import Logo from '../atoms/Logo'
 import Link from "next/link"
-// import { sidebarLinks } from '@/src/constants'
 
-import { AiFillHome } from "react-icons/ai";
+import { AiFillHome, AiFillCreditCard, AiFillSetting } from "react-icons/ai";
+import { FaUser, FaHandHoldingUsd, FaToolbox, FaLightbulb } from "react-icons/fa";
+import { BiTransfer } from "react-icons/bi";
+import { base } from '@/src/styles/variables';
+import { useContext } from 'react';
+import { usePathname } from 'next/navigation';
 
 const sidebarLinks = [
     {
@@ -14,12 +18,12 @@ const sidebarLinks = [
         label: "Dashboard",
     },
     {
-        icon: < AiFillHome />,
+        icon: < BiTransfer />,
         route: "/transactions",
         label: "Transactions",
     },
     {
-        icon: < AiFillHome />,
+        icon: < FaUser />,
         route: "/accounts",
         label: "Accounts",
     },
@@ -29,29 +33,29 @@ const sidebarLinks = [
         label: "Investment",
     },
     {
-        icon: < AiFillHome />,
+        icon: < AiFillCreditCard />,
         route: "/cards",
         label: "Cards",
     },
     {
-        icon: < AiFillHome />,
+        icon: < FaHandHoldingUsd />,
         route: "/loans",
         label: "Loans",
     },
     {
-        icon: < AiFillHome />,
+        icon: <FaToolbox />,
         route: "/services",
         label: "Services",
     },
     {
-        icon: < AiFillHome />,
+        icon: <  FaLightbulb />,
         route: "/my-priviledges",
         label: "My Privileges",
     },
     {
-        icon: < AiFillHome />,
+        icon: <AiFillSetting />,
         route: "/settings",
-        label: "Setting",
+        label: "Settings",
     }
 ]
 
@@ -59,14 +63,18 @@ const sidebarLinks = [
 
 const Sidebar = () => {
 
+    const {setTheme, theme } = useContext(ThemeContext)
+    const { pathname } = usePathname();
+
     return (
         <SiderbarContainer>
             <Logo />
             <SLinkContainer>
-                {sidebarLinks.map((link) => (
-                    <SLink key={link.label} href={link.route}>
-                        <SLinkIcon>{link.icon}</SLinkIcon>
-                        <SLinkLabel>{link.label}</SLinkLabel>
+                {sidebarLinks.map(({ icon, label, route }) => (
+                    <SLink key={label} href={route} isActive={pathname === route} >
+                        <SLinkDivider></SLinkDivider>
+                        <SLinkIcon>{icon}</SLinkIcon>
+                        <SLinkLabel>{label}</SLinkLabel>
                     </SLink>
                 ))}
             </SLinkContainer>
@@ -81,34 +89,65 @@ export default Sidebar
 //==================== STYLING ================================
 
 const SiderbarContainer = styled.aside`
-width: 30%;
-height: 100%;
+width: 23%;
+height: 100vh;
 /* padding: 0 2rem; */
-border-right: 1px solid #E5E5E5;
+border-right: 0.8px solid #E5E5E5;
 background: #ffff;
+
+position: relative;
 `
 
 const SLinkContainer = styled.div`
 background: transparent;
-padding: 5rem 0;
-
-
+padding: 1rem 0;
 `
-const SLink = styled(Link)`
-display: flex;
-border-left: 5px solid blue;
+ const SLinkDivider = styled.div`
+/* height: 40px;
+width: 4px; */
+margin-left: -5px;
+border-radius: 0rem 0.625rem 0.625rem 0rem;
 
-
-padding: 0;
-
-&::before {
-    background-color: black;
-    margin: 3rem
+&:hover {
+    /* background-color: blue;
+    height: 40px;
+    width: 4px; */
+    margin-left: -5px;
+    background: ${base.color.primary3};
+    border-radius: 0rem 0.625rem 0.625rem 0rem;
 }
 `
+
+
+const SLink = styled(Link)`
+display: flex;
+color: ${base.color.links};
+font-size: ${base.fontSize.t1};
+font-weight: 350;
+/* justify-content: center; */
+align-items: center;
+text-decoration: none;
+/* border-t: 25px solid red; */
+
+
+padding: 10px;
+
+&:hover {
+    background-color: #2d61ff15;
+    color: ${base.color.primary3};
+  }
+&:active {
+    /* background-color: green; */
+    color: ${base.color.primary3};
+  }
+`
 const SLinkIcon = styled.div`
-padding-left: 2rem
+padding-left: 2rem;
+font-size: 1.1rem;
 `
 const SLinkLabel = styled.div`
+margin-left: 1rem;
+font-size: 14px;
+font-weight: 400;
 
 `

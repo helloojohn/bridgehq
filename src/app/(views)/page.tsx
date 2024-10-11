@@ -1,6 +1,15 @@
+"use client"
+
+import BankCard from "@/src/components/BankCard"
+import ContainerWrap from "@/src/components/layout/container"
+import RecentTransaction from "@/src/components/RecentTransaction"
+
 const page = () => {
   return (
-    <div>Home Page for everything</div>
+    <ContainerWrap>
+      <BankCard />
+      <RecentTransaction/>
+    </ContainerWrap>
   )
 }
 
