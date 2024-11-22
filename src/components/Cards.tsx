@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { base } from '../styles/variables'
-// import chip from "../assets/chip.svg"
 import chip from "@/src/assets/chip.svg"
 import master from "@/src/assets/master.svg"
 import Image from "next/image"
@@ -55,10 +54,11 @@ const CardWrapper = styled.div`
 display: flex;
 flex-direction: column;
 /* background: ${base.gradient.blue}; */
-background: linear-gradient(107deg, #4C49ED 2.61%, #0A06F4 101.2%);
+background: linear-gradient(107deg, #2421b9 2.61%, #2724ef 101.2%);
+/* background: linear-gradient(107deg, #4C49ED 2.61%, #0A06F4 101.2%); */
 height: 12rem;
-width: 17.5rem;
-border-radius: 1.3rem;
+width: 100%;
+border-radius: 1rem;
 
 /* padding: 1.3rem; */
 color: white;
@@ -98,7 +98,7 @@ const CardDetails = styled.div`
 padding: 0 1.3rem;
 display: flex;
 justify-content: space-between;
-width: 85%;
+width: 90%;
 margin-bottom: 1rem;
 `
 

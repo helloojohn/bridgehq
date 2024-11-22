@@ -13,8 +13,8 @@ const MainLayout = ({
         <Container>
             <Sidebar />
             <Wrapper>
-                <Header />
-                {children}
+            <Header />
+            {children}
             </Wrapper>
         </Container>
     )
@@ -23,10 +23,11 @@ const MainLayout = ({
 export default MainLayout
 
 const Container = styled.main`
-    display: flex;
-    height: 100vh;
-    width: 100vw;
+display: flex;
+
 `
 
 const Wrapper = styled.div`
-width:100%;`
+width: 100%;
+
+`

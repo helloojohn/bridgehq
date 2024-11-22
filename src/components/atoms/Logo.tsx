@@ -2,7 +2,8 @@
 
 import Image from "next/image"
 import styled from "styled-components"
-import logo from "@/src/assets/logo.svg"
+// import logo from "@/src/assets/bridge.svg"
+import logo from "@/public/icons/bridge-favicon.png"
 import Link from "next/link"
 import { base } from "@/src/styles/variables"
 
@@ -17,9 +18,9 @@ const Logo = () => {
             <Image
                 src={logo}
                 alt="Bridge Logo"
-                width={30}
-                height={30} />
-            <LogoText>BRIDGE</LogoText>
+                width={25}
+                height={25} />
+            <LogoText>Bridge</LogoText>
         </LogoWrapper>
     )
 }
@@ -32,7 +33,7 @@ export default Logo
 const LogoWrapper = styled(Link)`
  display: flex;
  align-items: center;
- padding: 1rem 2rem;
+ padding: 1.5rem 2rem;
  text-decoration: none;
  color: black;
  cursor: pointer;
@@ -40,8 +41,12 @@ const LogoWrapper = styled(Link)`
 
 const LogoText = styled.h2`
 padding-left:0.5rem;
+margin-right: 0.3rem;
 color: ${base.color.primary2};
-font-size: 1.2rem;
-font-weight: 800;
+font-size: 1.3rem;
+font-weight: 700;
 `
+// const LogoText2 = styled.p`
+// font-size: 1.3rem;
+// `
 

@@ -34,7 +34,7 @@ const BankCardContainer = styled.div`
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- width: 60%;
+ width: 63%;
 `
 
 const BankCardHeader = styled.div`
@@ -57,5 +57,6 @@ text-decoration: none;
 `
 const CardContainer = styled.div`
 display: flex;
-justify-content: space-between
+justify-content: space-between;
+gap: 2rem;
 `

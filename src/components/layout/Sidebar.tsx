@@ -63,15 +63,16 @@ const sidebarLinks = [
 
 const Sidebar = () => {
 
-    const {setTheme, theme } = useContext(ThemeContext)
-    const { pathname } = usePathname();
+    // const {setTheme, theme } = useContext(ThemeContext)
+    // const { pathname } = usePathname();
 
     return (
         <SiderbarContainer>
             <Logo />
             <SLinkContainer>
                 {sidebarLinks.map(({ icon, label, route }) => (
-                    <SLink key={label} href={route} isActive={pathname === route} >
+                    // <SLink key={label} href={route} isActive={pathname === route} >
+                    <SLink key={label} href={route}>
                         <SLinkDivider></SLinkDivider>
                         <SLinkIcon>{icon}</SLinkIcon>
                         <SLinkLabel>{label}</SLinkLabel>
@@ -89,20 +90,20 @@ export default Sidebar
 //==================== STYLING ================================
 
 const SiderbarContainer = styled.aside`
-width: 23%;
-height: 100vh;
-/* padding: 0 2rem; */
 border-right: 0.8px solid #E5E5E5;
 background: #ffff;
-
-position: relative;
+height: 100vh;
+width:300px;
+/* position:fixed;
+z-index:1;
+top: 0; */
 `
 
 const SLinkContainer = styled.div`
 background: transparent;
-padding: 1rem 0;
+
 `
- const SLinkDivider = styled.div`
+const SLinkDivider = styled.div`
 /* height: 40px;
 width: 4px; */
 margin-left: -5px;

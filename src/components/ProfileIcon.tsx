@@ -8,7 +8,7 @@ const ProfileIcon = () => {
         <Profile>
             <ProfileImage src={john}
                 alt='Profile Photo'
-                height={90}
+                height={80}
             width={90}/>
         </Profile>
     )

@@ -8,14 +8,15 @@ const ContainerWrap = ({
   return (
     <Container>
       {children}
-      </Container>
+    </Container>
   )
 }
 
 export default ContainerWrap
 
 const Container = styled.div`
-margin: 1.4rem 2rem;
 display: flex;
 justify-content: space-between;
+margin: 2rem 3rem;
+
 `
