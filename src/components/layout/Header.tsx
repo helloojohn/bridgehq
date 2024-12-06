@@ -32,7 +32,7 @@ const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3rem;
+    padding: 0 2rem;
     height: 3.8rem;
     background: #ffff;
     border-bottom: 1px solid #E5E5E5;

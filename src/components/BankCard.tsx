@@ -16,6 +16,8 @@ const BankCard = () => {
                 <CardContainer>
                     <Cards/>
                     <Cards/>
+                    <Cards/>
+                    <Cards/>
                 </CardContainer>
             </BankCardContainer>
     )
@@ -34,7 +36,7 @@ const BankCardContainer = styled.div`
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- width: 63%;
+ width: 62%;
 `
 
 const BankCardHeader = styled.div`
@@ -57,6 +59,17 @@ text-decoration: none;
 `
 const CardContainer = styled.div`
 display: flex;
-justify-content: space-between;
-gap: 2rem;
+justify-content: flex-start;
+gap: 1.3rem;
+padding: 0.7rem;
+background-color: #eaebf1;
+border-radius: 0.5rem;
+
+overflow: scroll;
+-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+
+&::-webkit-scrollbar{
+  display: none;
+}
 `

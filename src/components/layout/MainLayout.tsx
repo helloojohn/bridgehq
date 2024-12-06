@@ -22,12 +22,14 @@ const MainLayout = ({
 
 export default MainLayout
 
-const Container = styled.main`
+const Container = styled.div`
+height: 100vh;
+width: 100vw;
 display: flex;
 
 `
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
 width: 100%;
 
 `

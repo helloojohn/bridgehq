@@ -37,10 +37,10 @@ color: ${base.color.primary2};
 const RTContainer = styled.div`
 padding: 1rem;
 width: 100%;
-height: 12rem;
+height: 13rem;
 background: white;
-border-radius: 1.4rem;
+border-radius: 0.7rem;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: flex-start;
 `

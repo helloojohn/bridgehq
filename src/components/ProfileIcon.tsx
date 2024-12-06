@@ -21,13 +21,16 @@ export default ProfileIcon
 // ======================= STYLING =====================
 
 const Profile = styled.div`
-margin-left: 1rem;
-height: 43px;
-width: 43px;
+display:flex;
+justify-content:center;
+align-items: center;
+margin-left: 0.7rem;
+height: 37px;
+width: 37px;
 cursor: pointer;
 `
 const ProfileImage = styled(Image)`
-border-radius: 40px;
+border-radius: 50px;
 height: 100%;
 width: 100%;
 object-fit: cover;

@@ -22,9 +22,12 @@ const Settings = styled.div`
 background: #F5F7FA;
 border-radius: 40px;
 margin: .4rem;
-/* display:flex; */
-/* height: 40px; */
-/* width: 250px; */`
+display:flex;
+justify-content:center;
+align-items: center;
+min-height: 35px;
+min-width: 35px;
+`
 
 const SettingIcon = styled.button`
 outline: none;
@@ -33,7 +36,7 @@ background: none;
 color: #718EBF;
 font-family: inherit;
 letter-spacing: inherit;
-text-align: inherit;
+text-align: center;
 padding: .5rem;
 display:flex;
 cursor: pointer;

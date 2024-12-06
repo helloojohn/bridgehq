@@ -2,7 +2,9 @@
 
 import TotalCards from "@/src/components/atoms/TotalCards"
 import BankCard from "@/src/components/BankCard"
+import Greeting from "@/src/components/Greeting"
 import ContainerWrap from "@/src/components/layout/Container"
+import MainWrapper from "@/src/components/layout/MainWrapper"
 import RecentTransaction from "@/src/components/RecentTransaction"
 import WeeklyActivity from "@/src/components/WeeklyActivity"
 import { styled } from "styled-components"
@@ -11,14 +13,11 @@ import { styled } from "styled-components"
 
 const Page = () => {
   return (
-    <Wrap>
-        <ContainerWrap>
-          <TotalCards/>
-          <TotalCards/>
-          <TotalCards/>
-          <TotalCards/>
-          <TotalCards/>
-        </ContainerWrap>
+    <MainWrapper>
+      <ContainerWrap>
+        <Greeting/>
+        <TotalCards/>
+      </ContainerWrap>
       <ContainerWrap>
         <BankCard />
         <RecentTransaction />
@@ -36,13 +35,8 @@ const Page = () => {
         <WeeklyActivity/>
       </ContainerWrap>
 
-    </Wrap>
+    </MainWrapper>
   )
 }
 
 export default Page;
-
-const Wrap = styled.div`
-/* margin-top: 5rem; */
-
- `

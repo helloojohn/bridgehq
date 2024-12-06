@@ -5,8 +5,10 @@ import { normalize } from "styled-normalize";
 export const GlobalStyle = createGlobalStyle`
     ${normalize}
     *, *::after, *::before {
+        /* padding: 0; */
         margin: 0;
         box-sizing: border-box;
+        overflow: hidden;
     }
 
     body {

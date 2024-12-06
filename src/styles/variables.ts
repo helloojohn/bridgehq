@@ -18,7 +18,7 @@ export const base = {
     color: {
         primary1: "#FEAA09",
         primary2: "#343C6A",
-        primary3: "#2D60FF",
+        primary3: "#274dc4",
         secondary: "#FE5C73",
         tertiary: "#16DBCC",
         background: "#F5F7FA",
@@ -39,12 +39,20 @@ export const base = {
     },
     spacing: {},
     breakpoints: {
-        xs: '0px',
-        sm: '576px', // landscape phones, 576px and up
-        md: '768px', // tablets, 768px and up
-        lg: '992px', // desktops, 992px and up
-        xl: '1200px', // large desktops, 1200px and up
-        xxl: '1400px' // larger desktops, 1400px and up
+        xs: '575.98px', // landscape phones, 576px and up
+        sm: '767.98px', // tablets, 768px and up
+        md: '991.98px', // desktops, 992px and up
+        lg: '1199.98px', // large desktops, 1200px and up
+        xl: '1399.98px' // larger desktops, 1400px and up
     },
 
+}
+
+
+export const device = {
+    xs: `(max-width: ${base.breakpoints.xs})`,
+    sm: `(max-width: ${base.breakpoints.sm})`,
+    md: `(max-width: ${base.breakpoints.md})`,
+    lg: `(max-width: ${base.breakpoints.lg})`,
+    xl: `(max-width: ${base.breakpoints.xl})`
 }
