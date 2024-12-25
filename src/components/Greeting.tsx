@@ -7,10 +7,10 @@ const Greeting = () => {
       <GreetinContainer>
           <Gwrap>
               <GTitle>
-                  Hi, John 👋
+                  Welcome, John 👋
               </GTitle>
               <Gtext>
-                  Monitor your finance with ease
+                  Access and Monitor your finances with ease
               </Gtext>
           </Gwrap>
           <Button>
@@ -35,7 +35,8 @@ flex-direction: column;
 
 const GTitle = styled.h3`
 margin-bottom: 5px;
-
+font-size: 1.2rem;
+font-weight: 600;
 `
 
 const Gtext = styled.p`
